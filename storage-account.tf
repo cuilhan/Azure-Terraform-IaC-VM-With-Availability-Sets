@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "frontend" {
-    name                     = "tfratalaystorageaccount"
+    name                     = "umitilhantfstorageacc"
     resource_group_name      = "${azurerm_resource_group.terraform_sample.name}"
     location                 = "${azurerm_resource_group.terraform_sample.location}"
     account_tier             = "Standard"

@@ -38,7 +38,7 @@ resource "azurerm_lb_rule" "port80" {
 resource "azurerm_lb_probe" "port443" {
     name                = "tf-lb-probe-443"
     loadbalancer_id     = "${azurerm_lb.frontend.id}"
-    protocol            = "Http"
+    protocol            = "Https"
     request_path        = "/"
     port                = 443
 }
